@@ -1,10 +1,7 @@
 % Computes n-dimensional vector fields for potential system with n
 % reference states, starting in the fixed frame
 
-% PotentialField2(2,'steps',20,'extraStates',[],'startPoint',[1.000020e+00,1.368897e-03])
-% PotentialField2(2,'steps',20,'extraStates',[0,0],'startPoint',[1.368897e-03,1.000020e+00],'npoints',10000)
-% PotentialField2(2,'steps',20,'extraStates',[0,0],'startPoint',[7.930000e-01, 2.232000e-01],'npoints',1000)
-% PotentialField2(2,'steps',20,'startPoint',[1,1],'npoints',1000,'step_size',1e-3)
+% PotentialField2(2,'steps',20,'startPoint',[1,1],'npoints',1000,'step_size',1e-3,'save',true)
 
 function PotentialField2(varargin)
 

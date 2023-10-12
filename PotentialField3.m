@@ -2,7 +2,6 @@
 % how an n-dimensional trajectory morphs into an n+1-dimensional trajectory
 
 % PotentialField3(2,'steps',20,'startPoint',[1,1],'extraStates',[1,1],'npoints',1000,'step_size',1e-3,'magnification',100,'save',true)
-% PotentialField3(2,'steps',20,'startPoint',[1,1],'extraStates',[1 + sin(15 * pi / 180),1 + sin(15 * pi / 180)],'npoints',1000,'step_size',1e-3,'magnification',100,'save','true')
 % PotentialField3(2,'steps',20,'startPoint',[0.5,0.5],'extraStates',[1,1],'npoints',1000,'step_size',1e-3,'magnification',100,'save',true)
 
 function PotentialField3(varargin)
@@ -290,7 +289,7 @@ gamma_prime = [fliplr(gamma_prime_rev(:,2:end)),gamma_prime(:,2:end)]; % join tr
 % gamma = fliplr(gamma_rev(:,2:end));
 % gamma_prime = fliplr(gamma_prime_rev(:,2:end)); % join trajectories
 
-cat(1,gamma,gamma_prime)
+% cat(1,gamma,gamma_prime)
 if n == 2
     if ishandle(1)
         set(0,'CurrentFigure',1)

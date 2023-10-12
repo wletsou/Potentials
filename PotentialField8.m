@@ -458,7 +458,7 @@ if n == 2
     ax.YLabel.String = '$$y$$';
     ax.ZLabel.String = '$$H$$';
     zp = get(get(gca,'ZLabel'),'Position');
-    zp(2) = 5 * zp(2);
+    zp(2) = 10 * zp(2);
     set(get(gca,'ZLabel'),'Position',zp)
     ax.ZLabel.Rotation = 0;
     % ax.YLabel.Rotation = 0;
