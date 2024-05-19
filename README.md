@@ -12,7 +12,7 @@ A plot of a series of tranjectories tilted out of the plane, together with a top
 PotentialField8(2,'steps',5,'npoints',1000,'step_size',1e-3,'save',true)
 ```
 
-and a plot of the series of three-dimensional suraces for increasing values of the inter-state separation distance c (**Figure 4**) was generated using
+and a plot of the series of three-dimensional suraces for decreasing values of the inter-state separation distance c (**Figure 4**) was generated using
 
 ```
 PotentialField11(3,1,'steps',100,'npoints',3000,'step_size',1e-3,'save',true)
