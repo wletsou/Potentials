@@ -57,12 +57,12 @@ for i = 1:n % transfer X's into a cell array
     eval(sprintf('x{%d} = x%d;',i,i))
 end
 
-% define rotation matrices for converting rectangular coordinates to
-% parallel/perpedicular components
+% define rotation matrices for reverse transformation of
+% parellel/perpendicular basis back to original frame
 if n == 2
-    R = [cos(-pi / 4) -sin(-pi / 4); sin(-pi / 4) cos(-pi / 4)]; % 2d rotation matrix
+    R = [cos(-pi / 4) -sin(-pi / 4); sin(-pi / 4) cos(-pi / 4)]; % 2d rotation matrix, undo a 45-degree rotation
 elseif n == 3
-    %3d rotation matrix: rotate about x, then z to position z at (1,1,1)
+    %3d rotation matrix: move z from (1,1,1) back to (1,0,0), undo rotatation about z
     R = [cos(-pi / 4) -sin(-pi / 4) 0; sin(-pi / 4) cos(-pi / 4) 0; 0 0 1] ...
         * [1 0 0; 0 cos(-acos(1/sqrt(3))) -sin(-acos(1/sqrt(3))); 0 sin(-acos(1/sqrt(3))) cos(-acos(1/sqrt(3)))];
 end
