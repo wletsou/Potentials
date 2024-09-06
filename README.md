@@ -12,7 +12,7 @@ A plot of a series of tranjectories tilted out of the plane, together with a top
 PotentialField8(2,'steps',5,'npoints',1000,'step_size',1e-3,'save',true)
 ```
 
-and a plot of the series of three-dimensional suraces for decreasing values of the inter-state separation distance c (**Figure 4**) was generated using
+and a plot of the series of three-dimensional surfaces for decreasing values of the inter-state separation distance c (**Figure 4**) was generated using:
 
 ```
 PotentialField11(3,1,'steps',100,'npoints',3000,'step_size',1e-3,'save',true)
@@ -22,6 +22,13 @@ PotentialField11(3,0.2,'steps',100,'npoints',3000,'step_size',1e-3,'save',true)
 PotentialField11(3,0.125,'steps',100,'npoints',3000,'step_size',1e-3,'save',true)
 PotentialField11(3,0.063,'steps',100,'npoints',3000,'step_size',1e-3,'save',true)
 ```
+Two views plots of the surface with either the endpoints fixed (**Figure 5A**) or the midpoint fixed (**Figure 5B**) were created using:
+
+```
+PotentialField4(2,'steps',10,'npoints',200,'step_size',5e-3,'save',true) # Figure 5A
+PotentialField4_1(2,'steps',10,'npoints',200,'step_size',5e-3,'save',true) # Figure 5A
+```
+
 Calculation of the inverse of the combination matrix B was perfomed using
 
 ```
